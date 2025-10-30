@@ -8,7 +8,6 @@
 Feedback is provided in terms of heuristic function
 </p>
 
-
 <h2>Algorithm:</h2>
 <p>
 <ol>
@@ -42,10 +41,8 @@ Feedback is provided in terms of heuristic function
 ```
 import random
 import string
-
 def fitness(candidate, target):
     return sum(abs(ord(candidate[i]) - ord(target[i])) for i in range(len(target)))
-
 def mutate(parent):
     idx = random.randrange(len(parent))
     new_char = random.choice(string.printable[:95])
@@ -92,7 +89,6 @@ Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 0  Solution :  Artificial Intelligence<br>
 
 ## OUTPUT
-
 <img width="440" height="509" alt="image" src="https://github.com/user-attachments/assets/345b51cd-feb8-4a99-9ada-ed9a40a18ff1" />
 
 <h2> Result : </h2>
